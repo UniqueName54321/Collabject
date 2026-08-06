@@ -4,12 +4,12 @@
   "developer": "Developer Name",
   "status": "released",
   "relationship": "adds_objects",
-  "description": "A short description of the project.",
+  "description": "A quick summary of a mod that relies on the Object Collab API.",
   "objects": [
     {
       "name": "Example Trigger",
       "type": "trigger",
-      "description": "An example Object Collab object."
+      "description": "A quick note about what this object does."
     }
   ],
   "links": {

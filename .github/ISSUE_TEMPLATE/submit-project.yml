@@ -1,21 +1,26 @@
-name: Submit an Object Collab project
-description: Submit a mod, integration, tool, or work in progress to the Collabject registry.
+name: Submit a project that uses Object Collab
+description: Tell us about a mod, tool, integration, or work in progress for the registry.
 title: "[Submission]: "
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for submitting a project!
+        Thanks for adding to Collabject!
 
-        Please provide enough information for us to verify how the project
-        uses or supports Object Collab.
+        Collabject is an external, unaffiliated website—not Object Collab and
+        not Object Workshop. Object Workshop downloads prefabs made from vanilla
+        Geometry Dash objects; Object Collab is the API mod that lets mods add
+        objects; Collabject lists mods that rely on that API.
+
+        Share enough detail for us to check how the project uses or supports
+        Object Collab. If you don't know every answer, that's okay—fill in what you can.
 
   - type: input
     id: project-name
     attributes:
       label: Project name
       description: What is the project called?
-      placeholder: Lua Trigger
+      placeholder: Example Trigger
     validations:
       required: true
 
@@ -40,7 +45,7 @@ body:
     id: relationship
     attributes:
       label: Relationship to Object Collab
-      description: Select the option that best describes the project.
+      description: Pick whichever option fits best.
       options:
         - Adds custom objects through Object Collab
         - Uses objects provided by other Object Collab mods
@@ -55,7 +60,7 @@ body:
     id: description
     attributes:
       label: Project description
-      description: What does the project do?
+      description: Give us the short version—what does it do?
       placeholder: Describe the project and its Object Collab integration.
     validations:
       required: true
@@ -64,7 +69,7 @@ body:
     id: objects
     attributes:
       label: Objects added or supported
-      description: List any custom objects involved. Write "None" if this does not apply.
+      description: List any custom objects involved. Write "None" if this doesn't apply.
       placeholder: |
         - Lua Trigger
         - Dialogue Trigger
@@ -114,7 +119,7 @@ body:
   - type: checkboxes
     id: confirmation
     attributes:
-      label: Submission confirmation
+      label: One last check
       options:
         - label: I have provided accurate information and evidence of the project's Object Collab relationship.
           required: true
