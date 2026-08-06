@@ -1,0 +1,120 @@
+name: Submit an Object Collab project
+description: Submit a mod, integration, tool, or work in progress to the Collabject registry.
+title: "[Submission]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a project!
+
+        Please provide enough information for us to verify how the project
+        uses or supports Object Collab.
+
+  - type: input
+    id: project-name
+    attributes:
+      label: Project name
+      description: What is the project called?
+      placeholder: Lua Trigger
+    validations:
+      required: true
+
+  - type: input
+    id: mod-id
+    attributes:
+      label: Geode mod ID
+      description: Leave this blank if the project does not have one yet.
+      placeholder: developer.mod-name
+    validations:
+      required: false
+
+  - type: input
+    id: developer
+    attributes:
+      label: Developer or team
+      placeholder: Developer name
+    validations:
+      required: true
+
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Relationship to Object Collab
+      description: Select the option that best describes the project.
+      options:
+        - Adds custom objects through Object Collab
+        - Uses objects provided by other Object Collab mods
+        - Provides compatibility with Object Collab
+        - Tool or resource for Object Collab developers
+        - Experimental or unreleased integration
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Project description
+      description: What does the project do?
+      placeholder: Describe the project and its Object Collab integration.
+    validations:
+      required: true
+
+  - type: textarea
+    id: objects
+    attributes:
+      label: Objects added or supported
+      description: List any custom objects involved. Write "None" if this does not apply.
+      placeholder: |
+        - Lua Trigger
+        - Dialogue Trigger
+    validations:
+      required: true
+
+  - type: input
+    id: geode-link
+    attributes:
+      label: Geode index link
+      description: Leave blank if the project is not published on the Geode index.
+      placeholder: https://geode-sdk.org/mods/developer.mod-name
+    validations:
+      required: false
+
+  - type: input
+    id: source-link
+    attributes:
+      label: Source repository
+      description: Link to the source code, if publicly available.
+      placeholder: https://github.com/developer/project
+    validations:
+      required: false
+
+  - type: input
+    id: download-link
+    attributes:
+      label: Other project link
+      description: Website, release page, Discord post, documentation, or another relevant link.
+      placeholder: https://example.com/project
+    validations:
+      required: false
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Development status
+      options:
+        - Released
+        - Public beta
+        - Work in progress
+        - Planned
+        - Discontinued
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission confirmation
+      options:
+        - label: I have provided accurate information and evidence of the project's Object Collab relationship.
+          required: true
