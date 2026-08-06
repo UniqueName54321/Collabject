@@ -1,7 +1,7 @@
 # Collabject
 
 Collabject is a community hub and registry for Geometry Dash mods that use
-or support Object Collab.
+or support Object Collab. Collabject is not to be confused with Object Collab itself.
 
 ## Submit a project
 

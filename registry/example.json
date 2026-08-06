@@ -1,0 +1,20 @@
+{
+  "name": "Example Project",
+  "mod_id": "developer.mod-name",
+  "developer": "Developer Name",
+  "status": "released",
+  "relationship": "adds_objects",
+  "description": "A short description of the project.",
+  "objects": [
+    {
+      "name": "Example Trigger",
+      "type": "trigger",
+      "description": "An example Object Collab object."
+    }
+  ],
+  "links": {
+    "geode": "https://geode-sdk.org/mods/developer.mod-name",
+    "source": "https://github.com/developer/project",
+    "website": null
+  }
+}
